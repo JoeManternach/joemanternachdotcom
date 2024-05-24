@@ -1,3 +1,14 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
 section {
     max-width: 50%;
     margin: 0 auto;
@@ -5,7 +16,10 @@ section {
     font-family: "Arial", sans-serif;
     border: none;
     border-radius: 10px;
-    background-color: #fff; /* White background for sections */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+}
+.content-section {
+    display: none;
 }

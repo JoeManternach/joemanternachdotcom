@@ -1,19 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contact-form');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        console.log(`Name: ${name}`);
-        console.log(`Email: ${email}`);
-        console.log(`Message: ${message}`);
-
-        alert('Form submitted successfully!');
-
-        form.reset();
+function show_content(section) {
+    // Hide all content sectiosn
+    let sections = document.querySelector(".content-section");
+    sections.forEach(function(section) {
+        section.style.display = 'none';
     });
-});
+
+    document.getElementById(section).style.display = "block";
+}
