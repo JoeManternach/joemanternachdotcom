@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple website using best practices in web development.">
     <title>Joe Manternach</title>
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
-    <header>
-        
-    </header>
 
-    <nav class="sidebar">
+
+    <header class="sidebar">
+        <h2 style="text-align: center;">Joe Manternach</h2>
         <ul>
-            <li><a href="#" onClick="show_content('home')">Home</a></li>
-            <li><a href="#" onClick="show_content('about-me')">About</a></li>
-            <li><a href="#" onClick="show_content('contact-me')">Contact</a></li>
+            <li><a href="#" onclick="show_content('home')">Home</a></li>
+            <li><a href="#" onclick="show_content('about-me')">About me</a></li>
+            <li><a href="#" onclick="show_content('contact-me')">Contact me</a></li>
+            <li><a href="#" style="color: #333"onmouseover="this.style.color='white'" onmouseout="this.style.color='#333'" onclick="show_content('hello-there')">Hello there?</a></li>
         </ul>
+    </header>
+    
 
-    </nav>
     <main class="main-content">
-        <section class="content-section" id="about-me"> 
-            <h2>About Me</h2>
-            <p>
-                Microcontrollers? Oh, they're my jam! Picture this: the euphoria of writing pristine 
-                code that runs like a dream, blended with the sheer artistry of elegant circuitry. 
-                <br><br>
-                That my friend is a microcontroller. A symphony of creativity and problem-solving, 
-                all rolled into one tiny, electrifying package.
-                <br><br>
-                Let me tell you, I'm all about that constant quest for knowledge and the thrill 
-                of bringing ideas to life. So, when I stumbled upon the Arduino, it was like 
-                stumbling upon a gold mine of possibilities. I was tired of the same old circuit conundrums 
-                in class, so I decided to shake things up in the summer of 2023, where I took the plunge 
-                and snagged myself an Arduino. And let me tell you, that summer? It was bound to be 
-                legendary.
-            </p>
+
+        <section class="content-section" id="home">
+            <div class="container" id="joke">
+
+                <h2>Joke of the Day</h2>
+
+                <p>
+                    Why don't scientists trust atoms? 
+                </p>
+
+                <p id="answer" style="display: none;">
+                    Because they make up everything!
+                </p>
+
+                <button onclick="toggle_answer()">Show Answer</button>
+
+            </div>
+
         </section>
-        
+
+        <section class="content-section" id="about-me" style="display: none;">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    Microcontrollers? Oh, they're my jam! Picture this: the euphoria of writing pristine 
+                    code that runs like a dream, blended with the sheer artistry of elegant circuitry. 
+                    <br><br>
+                    That my friend is a microcontroller. A symphony of creativity and problem-solving, 
+                    all rolled into one tiny, electrifying package.
+                    <br><br>
+                    Let me tell you, I'm all about that constant quest for knowledge and the thrill 
+                    of bringing ideas to life. So, when I stumbled upon the Arduino, it was like 
+                    stumbling upon a gold mine of possibilities. I was tired of the same old circuit conundrums 
+                    in class, so I decided to shake things up in the summer of 2023, I took the plunge 
+                    and snagged myself an Arduino. And let me tell you, that summer? It was bound to be 
+                    legendary.
+                </p>
+            </div>
+        </section>
+
         <section class="content-section" id="contact-me" style="display: none;">
-            <h2>Contact Me</h2>
-        
-            <p>
-                My stuff is below. Let me know what you think!
-                <br><br>
-                &#x260E; (563)-940-3450
-                <br>
-                &#x2709; joemanternach18@gmail.com
-                <br>
-                <i class="fab fa-linkedin-in" style="color: #f57c00; cursor: pointer; font-size: 18px;" onclick="navigateToUrl('https://www.linkedin.com/in/joseph-manternach')"></i> Click the 'in' if you want to be a millionare
-            </p>
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>
+                    My stuff is below. Let me know what you think!
+                    <br><br>
+                    &#x260E; (563)-940-3450
+                    <br>
+                    &#x2709; joemanternach18@gmail.com
+                    <br>
+                    <p>LinkedIn</p>
+                </p>
+            </div>
         </section>
 
+        <section class="content-section" id="hello-there" style="display: none;">
+            <div class="container">
+                <h2>Hello there</h2>
+                <p>Hey crazy lady! See how cool having a website can be?</p>
+            </div>
 
+        </section>
     </main>
 
+
     <footer>
-        <p>This is the footer... idk what to put here</p>
+        
     </footer>
 
     <script src="js/scripts.js"></script>
+
 </body>
 </html>

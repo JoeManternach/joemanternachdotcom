@@ -4,22 +4,64 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
 }
-.main-content {
-    flex-grow: 1;
-    padding: 20px;
-    box-sizing: border-box;
-}
-section {
-    max-width: 50%;
+
+.container {
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
-    font-family: "Arial", sans-serif;
     border: none;
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin-top: 20px;
 }
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
 .content-section {
     display: none;
+}
+
+.content-section:first-child {
+    display: block;
+}
+
+.hidden-text {
+    color: #333; 
+}
+
+.hidden-text:hover {
+    color: white; 
 }
