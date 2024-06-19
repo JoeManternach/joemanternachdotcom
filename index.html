@@ -15,8 +15,8 @@
     <header class="sidebar">
         <h2 style="text-align: center;">Joe Manternach</h2>
         <ul>
-            <li><a href="#" onclick="show_content('home')">Home</a></li>
-            <li><a href="#" onclick="show_content('about-me')">About me</a></li>
+            <li><a href="#" onclick="show_content('joke')">Joke of the day</a></li>
+            <li><a href="#" onclick="show_content('projects')">Projects</a></li>
             <li><a href="#" onclick="show_content('contact-me')">Contact me</a></li>
         </ul>
     </header>
@@ -24,7 +24,7 @@
 
     <main class="main-content">
 
-        <section class="content-section" id="home">
+        <section class="content-section" id="joke">
             <div class="container" id="joke">
 
                 <h2>Joke of the Day</h2>
@@ -43,22 +43,21 @@
 
         </section>
 
-        <section class="content-section" id="about-me" style="display: none;">
+        <section class="content-section" id="projects" style="display: none;">
             <div class="container">
-                <h2>About Me</h2>
+                <h2>Internet Protocol</h2>
                 <p>
-                    Microcontrollers? Oh, they're my jam! Picture this: the euphoria of writing pristine 
-                    code that runs like a dream, blended with the sheer artistry of elegant circuitry. 
-                    <br><br>
-                    That my friend is a microcontroller. A symphony of creativity and problem-solving, 
-                    all rolled into one tiny, electrifying package.
-                    <br><br>
-                    Let me tell you, I'm all about that constant quest for knowledge and the thrill 
-                    of bringing ideas to life. So, when I stumbled upon the Arduino, it was like 
-                    stumbling upon a gold mine of possibilities. I was tired of the same old circuit conundrums 
-                    in class, so I decided to shake things up in the summer of 2023, I took the plunge 
-                    and snagged myself an Arduino. And let me tell you, that summer? It was bound to be 
-                    legendary.
+                    Using python and our imagination my friend and I crafted an internet 
+                    protocol. Using TCP we sent data packets, ACK's, and NACK's. To 
+                    demonstrate our protocol we created a video game. We called this game
+                    "Plant Protocol". The player would start up the game and be prompted 
+                    with the login screen. From there our protocol would be used for communication 
+                    between the client and server. After the user logins in the client would 
+                    send a communication to the server with the players username. The server would 
+                    then send the client the players plants and other information. At the end the client 
+                    sends the server the up to date version of the plant list and other information like 
+                    hunger and thirst levels. In this project I learned how to setup server and client 
+                    communications and also multithreading.
                 </p>
             </div>
         </section>
@@ -72,8 +71,6 @@
                     &#x260E; (563)-940-3450
                     <br>
                     &#x2709; joemanternach18@gmail.com
-                    <br>
-                    <p>LinkedIn</p>
                 </p>
             </div>
         </section>
