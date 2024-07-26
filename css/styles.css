@@ -24,30 +24,6 @@ body, html {
     margin-bottom: 20px;
 }
 
-@media (max-width: 1200px) {
-    .sidebar h2{
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 992px) {
-    .sidebar h2{
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 768px) {
-    .sidebar h2{
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .sidebar h2{
-        font-size: 16px;
-    }
-}
-
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -56,30 +32,6 @@ body, html {
 .sidebar ul li {
     padding: 10px;
     text-align: center;
-}
-
-@media (max-width: 1200px) {
-    .sidebar ul li {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 992px) {
-    .sidebar ul li {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-    .sidebar ul li {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 576px) {
-    .sidebar ul li {
-        font-size: 10px;
-    }
 }
 
 
@@ -110,32 +62,6 @@ body, html {
     font-size: 16px;
 
 }
-
-
-@media (max-width: 1200px) {
-    .container p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container p {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 576px) {
-    .container p {
-        font-size: 10px;
-    }
-}
-
 
 
 .main-content {
@@ -184,11 +110,6 @@ footer {
     min-width: 300px;
 }
 
-.subsection h3 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 
 .image-container-one-pic, .image-container-two-pic {
     text-align: center;
@@ -212,6 +133,110 @@ footer {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(25%, 1fr));
     gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .subsection h1 {
+        font-size: 24px;
+    }
+    .sidebar h2{
+        font-size: 22px;
+    }
+    .sidebar ul li, .container p, .subsection p {
+        font-size: 16px;
+    }
+    .container {
+        max-width: 65%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(25%, 1fr));
+        gap: 10px;
+    }
+    
+    
+}
+
+@media (max-width: 992px) {
+    .subsection h1 {
+        font-size: 22px;
+    }
+    .sidebar h2{
+        font-size: 20px;
+    }
+    .sidebar ul li, .container p, .subsection p {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 65%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(25%, 1fr));
+        gap: 10px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .subsection h1 {
+        font-size: 20px;
+    }
+    .sidebar h2{
+        font-size: 18px;
+    }
+    .sidebar ul li, .container p, .subsection p {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 65%;
+        margin: 2px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(25%, 1fr));
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .subsection h1 {
+        font-size: 18px;
+    }
+    .sidebar h2{
+        font-size: 16px;
+    }
+    .sidebar ul li, .container p, .subsection p {
+        font-size: 10px;
+    }
+    .container {
+        max-width: 65%;
+        margin: 1px;
+        padding: 1px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(25%, 1fr));
+        gap: 10px;
+    }
 }
