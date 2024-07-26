@@ -20,9 +20,9 @@
     <header class="sidebar">
         <h2>Joe Manternach</h2>
         <ul>
-            <li><a href="#" onclick="show_content('joke')">Joke of the day</a></li>
-            <li><a href="#" onclick="show_content('projects')">Projects</a></li>
             <li><a href="#" onclick="show_content('about-me')">About me</a></li>
+            <li><a href="#" onclick="show_content('projects')">Projects</a></li>
+            <li><a href="#" onclick="show_content('undecided')"></a></li>
         </ul>
     </header>
     
@@ -30,25 +30,72 @@
     <main class="main-content">
         
         
-        <section class="content-section" id="joke">
+        <section class="content-section" id="about-me">
             
             <div class="container">
-                <h2>Joke of the Day</h2>
-                <p>
-                    What do you call a hippie's wife?
-                </p>
 
-                <p id="answer" style="display: none;">
-                    Mississippi.
-                </p>
+                <div class="subsection">
 
-                <button onclick="toggle_answer()">Show Answer</button>
+                    <h2>Joke of the Day</h2>
+                    <p>
+                        What do you call a hippie's wife?
+                    </p>
+
+                    <p id="answer" style="display: none;">
+                        Mississippi.
+                    </p>
+
+                    <button onclick="toggle_answer()">Show Answer</button>
+
+                </div>
 
             </div>
+            
+            <div class="container">
+                <div class="grid">
+                    <div class="subsection">
+                        <h1>Running</h1>
+                        <div class="image-container-one-pic">
+                            <img src="pics/running.png" alt="photo at the finish line of the flying pig" height="500px">
+                        </div>
+                        <p>
+                            I enjoy the running lifestyle, from training daily to trying out new engery
+                            chews. I've ran two half marathons, one on a trail and another at the Flying Pig 
+                            in Cincinnati. Next up: one more half, then the full! 
+                        </p>
+                    </div>
+                    <div class="subsection">
+                        <h1>Fishing</h1>
+                        <div class="image-container-two-pic">
+                            <img src="pics/fish3.png" alt="small mouth bass">
+                            <img src="pics/fish1.png" alt="small mouth bass">
+                        </div>
+                        <p>
+                            There's nothing quite like hitting the creek and tracking down some monsters. 
+                            My primary targets are small and large mouth bass, with the occasional northern 
+                            pike or crappie. I prefer fishing in creeks because it adds an extra thrill to 
+                            the adventure (totally not because I don't have a boat).
+                        </p>
+                        
+                    </div>
+                </div>
+                
+            </div>  
+            
+            <div class="container">
 
+                <div class="subsection">
+
+                    <h1>Don't be a stranger</h1>
+                    <p>To learn more about me as a professional and student download my resume below!</p>
+                    <a href="resume/joseph_manternach_resume.pdf" target="_blank">joseph_manternach_resume.pdf</a>
+
+                </div>
+
+            </div>
         </section>
 
-
+        
         <section class="content-section" id="projects" style="display: none;">
            
             <div class="container">
@@ -140,47 +187,12 @@
             </div> 
         
         </section>
-
-
-        <section class="content-section" id="about-me" style="display: none;">
-            <div class="container">
-                <div class="grid">
-                    <div class="subsection">
-                        <h1>Running</h1>
-                        <div class="image-container-one-pic">
-                            <img src="pics/running.png" alt="photo at the finish line of the flying pig" height="500px">
-                        </div>
-                        <p>
-                            I enjoy the running lifestyle, from training daily to trying out new engery
-                            chews. I've ran two half marathons, one on a trail and another at the Flying Pig 
-                            in Cincinnati. Next up: one more half, then the full! 
-                        </p>
-                    </div>
-                    <div class="subsection">
-                        <h1>Fishing</h1>
-                        <div class="image-container-two-pic">
-                            <img src="pics/fish3.png" alt="small mouth bass">
-                            <img src="pics/fish1.png" alt="small mouth bass">
-                        </div>
-                        <p>
-                            There's nothing quite like hitting the creek and tracking down some monsters. 
-                            My primary targets are small and large mouth bass, with the occasional northern 
-                            pike or crappie. I prefer fishing in creeks because it adds an extra thrill to 
-                            the adventure (totally not because I don't have a boat).
-                        </p>
-                        
-                    </div>
-                </div>
-                
-            </div>  
-            
-            <div class="container">
-                <h1>Don't be a stranger</h1>
-                <p>To learn more about me as a professional and student download my resume below!</p>
-                <a href="resume/joseph_manternach_resume.pdf" target="_blank">joseph_manternach_resume.pdf</a>
-            </div>
-        </section>
     
+
+        <section class="content-section" id="undecided" style="display: none;">
+            
+
+        </section>
     
     </main>
 
