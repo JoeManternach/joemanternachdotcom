@@ -92,6 +92,14 @@ button:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     min-width: 50%;
 }
+.subsection-two-col {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    min-width: 50%;
+    grid-column: 1/3;
+}
 
 .image-container-one-pic, .image-container-two-pic {
     text-align: center;
@@ -102,7 +110,7 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 40%;
-    height: auto;
+    height: 20%;
 }
 
 .image-container-one-pic img {
